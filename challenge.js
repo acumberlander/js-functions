@@ -5,7 +5,7 @@ const printToDom = (stringToPrint, divId) => {
 
 let bandNumber = 0;
 
-const takeNumber = function (bandName) {
+const takeNumber = (bandName) => {
   bandNumber ++;
   bandName = `${bandNumber}. ${bandName}`;
   printToDom(`<h2>${bandName}</h2>`, 'allTheNumbers');  // you should already have this function written from the class lecture
